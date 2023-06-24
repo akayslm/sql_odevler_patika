@@ -1,1 +1,2 @@
-[# sql_odevler_patika](https://camo.githubusercontent.com/41ab666871c0f78f1af42b184e2bd49c11a0adc0ac49939b2196e2a338568b3b/68747470733a2f2f722e726573696d6c696e6b2e636f6d2f517671624a7a55672e706e67)https://camo.githubusercontent.com/41ab666871c0f78f1af42b184e2bd49c11a0adc0ac49939b2196e2a338568b3b/68747470733a2f2f722e726573696d6c696e6b2e636f6d2f517671624a7a55672e706e67
+
+![patika dev](https://github.com/akayslm/sql_odevler_patika/assets/73195655/2bd0911a-f1e5-4ea9-b666-bdf0bd4eb61c)
