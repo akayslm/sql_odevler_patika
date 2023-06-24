@@ -8,3 +8,5 @@
 > #### Bu repo'da [Patika](https://academy.patika.dev/) SQL eğitiminde yapmış olduğunuz bütün ödevler bulunmaktadır.
 
 <br>
+
+**SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**
