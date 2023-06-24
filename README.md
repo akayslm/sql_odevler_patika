@@ -9,8 +9,8 @@
 
 <br>
 
-**SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal**
-**SQL Ödev 02 | BETWEEN - AND Yapısı ve In Operatörü**
+**SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal** </br>
+**SQL Ödev 02 | BETWEEN - AND Yapısı ve In Operatörü** </br>
 
 
 <br>
@@ -62,7 +62,7 @@ SELECT * FROM film
 WHERE NOT (length>50 AND (rental_rate = 2.99 OR rental_rate = 4.99));
 
 ```
-##SQL Ödev 02 | BETWEEN - AND Yapısı ve In Operatörü
+## SQL Ödev 02 | BETWEEN - AND Yapısı ve In Operatörü 
 
 <br>
 <br>
