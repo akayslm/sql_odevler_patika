@@ -11,7 +11,8 @@
 
 **SQL Ödev 01 | WHERE ve Karşılaştırma & Mantıksal** </br>
 **SQL Ödev 02 | BETWEEN - AND Yapısı ve In Operatörü** </br>
-**SQL Ödev 03 | LIKE AND ILIKE** </br>
+**SQL Ödev 03 | LIKE ve ILIKE** </br>
+**SQL Ödev 04 | DISTINCT ve COUNT** </br>
 
 <br>
 
