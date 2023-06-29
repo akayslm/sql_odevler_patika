@@ -15,6 +15,7 @@
 **SQL Ödev 04 | DISTINCT ve COUNT** </br>
 **SQL Ödev 05 | LIMIT OFFSET ve ORDER BY** </br>
 **SQL Ödev 06 | AGGREGATE Fonksiyonlar** </br>
+**SQL Ödev 07 | GROUP BY ve HAVING Fonksiyonları** </br>
 
 <br>
 
@@ -219,4 +220,39 @@ WHERE rental_rate = 0.99;
 ```
 SELECT COUNT(DISTINCT replacement_cost) FROM film
 WHERE length > 150;
+```
+
+## SQL Ödev 07 | GROUP BY ve HAVING Fonksiyonları
+
+<br>
+
+1-) <strong>film</strong> tablosunda bulunan filmleri <strong>rating</strong> değerlerine göre gruplayınız.
+
+```
+SELECT rating FROM film
+GROUP BY rating;
+```
+
+2-) <strong>film</strong> tablosunda bulunan filmleri <strong>replacement_cost</strong> sütununa göre grupladığımızda film sayısı 50 den fazla olan replacement_cost değerini ve karşılık gelen film sayısını sıralayınız.
+
+```
+SELECT replacement_cost, COUNT(*) FROM film
+GROUP BY replacement_cost 
+HAVING COUNT(*) > 50;
+```
+
+3-) <strong>customer</strong> tablosunda bulunan store_id değerlerine karşılık gelen müşteri sayılarını nelerdir?
+
+```
+SELECT store_id, COUNT(*) FROM customer
+GROUP BY store_id;
+```
+
+4-) <strong>city<strong> tablosunda bulunan şehir verilerini <strong>country_id</strong> sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
+
+```
+SELECT country_id, COUNT(city) FROM city
+GROUP BY country_id
+ORDER BY COUNT(city) DESC
+LIMIT 1;
 ```
