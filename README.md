@@ -248,7 +248,7 @@ SELECT store_id, COUNT(*) FROM customer
 GROUP BY store_id;
 ```
 
-4-) <strong>city<strong> tablosunda bulunan şehir verilerini <strong>country_id</strong> sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
+4-) <strong>city</strong> tablosunda bulunan şehir verilerini <strong>country_id</strong> sütununa göre gruplandırdıktan sonra en fazla şehir sayısı barındıran country_id bilgisini ve şehir sayısını paylaşınız.
 
 ```
 SELECT country_id, COUNT(city) FROM city
