@@ -17,6 +17,7 @@
 **SQL Ödev 06 | AGGREGATE Fonksiyonlar** </br>
 **SQL Ödev 07 | GROUP BY ve HAVING Fonksiyonları** </br>
 **SQL Ödev 08 | Tablo Oluşturma, Veri Ekleme, Silme ve Güncelleme** </br>
+**SQL Ödev 09 | INNER JOIN ile Tablo Birleştirme** </br>
 
 <br>
 
@@ -375,4 +376,32 @@ WHERE birthday = '1992-10-24';
 
 DELETE FROM employee
 WHERE id = 35;
+```
+
+## SQL Ödev 09 | INNER JOIN ile Tablo Birleştirme
+
+<br>
+
+1-) <strong>city</strong> tablosu ile <strong>country</strong> tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+```
+SELECT city, country FROM city
+INNER JOIN country ON city.country_id = country.country_id;
+
+```
+
+2-) <strong>customer</strong> tablosu ile <strong>payment</strong> tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+```
+SELECT payment.payment_id, customer.first_name, customer.last_name FROM payment
+INNER JOIN customer ON payment.customer_id = customer.customer_id;
+
+```
+
+3-) <strong>customer</strong> tablosu ile <strong>rental</strong> tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
+
+```
+SELECT rental.rental_id, customer.first_name, customer.last_name FROM rental
+INNER JOIN customer ON rental.customer_id = customer.customer_id;
+
 ```
