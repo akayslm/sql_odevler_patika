@@ -19,6 +19,7 @@
 **SQL Ödev 08 | Tablo Oluşturma, Veri Ekleme, Silme ve Güncelleme** </br>
 **SQL Ödev 09 | INNER JOIN ile Tablo Birleştirme** </br>
 **SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN ile Tablo Birleştirme** </br>
+**SQL Ödev 11 | UNION, INTERSECT, EXCEPT** </br>
 
 <br>
 
@@ -427,4 +428,47 @@ RIGHT JOIN payment ON customer.customer_id = payment.customer_id;
 ```
 SELECT rental.rental_id, customer.first_name, customer.last_name FROM customer
 FULL JOIN rental ON customer.customer_id = rental.customer_id;
+```
+## SQL Ödev 11 | UNION, INTERSECT, EXCEPT
+
+<br>
+
+1-) <strong>actor</strong> ve <strong>customer</strong> tablolarında bulunan <strong>first_name</strong> sütunları için tüm verileri sıralayalım.
+
+```
+(SELECT first_name FROM actor)
+UNION 
+(SELECT first_name FROM customer);
+```
+
+2-) <strong>actor</strong> ve <strong>customer</strong> tablolarında bulunan <strong>first_name</strong> sütunları için kesişen verileri sıralayalım.
+
+```
+(SELECT first_name FROM actor)
+INTERSECT
+(SELECT first_name FROM customer);
+```
+
+3-) <strong>actor</strong> ve <strong>customer</strong> tablolarında bulunan <strong>first_name</strong> sütunları için ilk tabloda bulunan ancak ikinci tabloda bulunmayan verileri sıralayalım.
+
+```
+(SELECT first_name FROM actor)
+EXCEPT
+(SELECT first_name FROM customer);
+```
+
+4-) İlk 3 sorguyu tekrar eden veriler için de yapalım.
+
+```
+(SELECT first_name FROM actor)
+UNION ALL
+(SELECT first_name FROM customer);
+
+(SELECT first_name FROM actor)
+INTERSECT ALL
+(SELECT first_name FROM customer);
+
+(SELECT first_name FROM actor)
+EXCEPT ALL
+(SELECT first_name FROM customer);
 ```
