@@ -18,6 +18,7 @@
 **SQL Ödev 07 | GROUP BY ve HAVING Fonksiyonları** </br>
 **SQL Ödev 08 | Tablo Oluşturma, Veri Ekleme, Silme ve Güncelleme** </br>
 **SQL Ödev 09 | INNER JOIN ile Tablo Birleştirme** </br>
+**SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN ile Tablo Birleştirme** </br>
 
 <br>
 
@@ -387,7 +388,6 @@ WHERE id = 35;
 ```
 SELECT city, country FROM city
 INNER JOIN country ON city.country_id = country.country_id;
-
 ```
 
 2-) <strong>customer</strong> tablosu ile <strong>payment</strong> tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
@@ -395,7 +395,6 @@ INNER JOIN country ON city.country_id = country.country_id;
 ```
 SELECT payment.payment_id, customer.first_name, customer.last_name FROM payment
 INNER JOIN customer ON payment.customer_id = customer.customer_id;
-
 ```
 
 3-) <strong>customer</strong> tablosu ile <strong>rental</strong> tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
@@ -403,5 +402,29 @@ INNER JOIN customer ON payment.customer_id = customer.customer_id;
 ```
 SELECT rental.rental_id, customer.first_name, customer.last_name FROM rental
 INNER JOIN customer ON rental.customer_id = customer.customer_id;
+```
 
+## SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN ile Tablo Birleştirme
+
+<br>
+
+1-) <strong>city</strong> tablosu ile <strong>country</strong> tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz LEFT JOIN sorgusunu yazınız.
+
+```
+SELECT city, country FROM city
+LEFT JOIN country ON city.country_id = country.country_id;
+```
+
+2-) <strong>customer</strong> tablosu ile <strong>payment</strong> tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz RIGHT JOIN sorgusunu yazınız.
+
+```
+SELECT payment.payment_id, customer.first_name, customer.last_name FROM customer
+RIGHT JOIN payment ON customer.customer_id = payment.customer_id;
+```
+
+3-) <strong>customer</strong> tablosu ile <strong>rental</strong> tablosunda bulunan rental_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz FULL JOIN sorgusunu yazınız.
+
+```
+SELECT rental.rental_id, customer.first_name, customer.last_name FROM customer
+FULL JOIN rental ON customer.customer_id = rental.customer_id;
 ```
