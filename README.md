@@ -5,7 +5,7 @@
 
  # SQL Eğitim Patika 
 
-> #### Bu repo'da [Patika](https://academy.patika.dev/) SQL eğitiminde yapmış olduğunuz bütün ödevler bulunmaktadır.
+> #### Bu repo'da [Patika](https://academy.patika.dev/) SQL eğitiminde yapmış olduğum bütün ödevler bulunmaktadır.
 
 <br>
 
@@ -20,6 +20,7 @@
 **SQL Ödev 09 | INNER JOIN ile Tablo Birleştirme** </br>
 **SQL Ödev 10 | LEFT JOIN, RIGHT JOIN, FULL JOIN ile Tablo Birleştirme** </br>
 **SQL Ödev 11 | UNION, INTERSECT, EXCEPT** </br>
+**SQL Ödev 12 | Sorgu Senaryoları** </br>
 
 <br>
 
@@ -471,4 +472,31 @@ INTERSECT ALL
 (SELECT first_name FROM actor)
 EXCEPT ALL
 (SELECT first_name FROM customer);
+```
+## SQL Ödev 12 | Sorgu Senaryoları
+
+<br>
+
+1-) <strong>film</strong> tablosunda film uzunluğu <strong>length</strong> sütununda gösterilmektedir. Uzunluğu ortalama film uzunluğundan fazla kaç tane film vardır?
+
+```
+
+```
+
+2-) <strong>film</strong> tablosunda en yüksek rental_rate değerine sahip kaç tane film vardır?
+
+```
+
+```
+
+3-) <strong>film</strong> tablosunda en düşük rental_rate ve en düşün replacement_cost değerlerine sahip filmleri sıralayınız.
+
+```
+
+```
+
+4-) <strong>payment</strong> tablosunda en fazla sayıda alışveriş yapan müşterileri(customer) sıralayınız.
+
+```
+
 ```
